@@ -43,5 +43,5 @@ Use the Postman collection below to test all APIs.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/pixisphere-backend.git
+git clone [https://github.com/your-username/pixisphere-backend.git](https://github.com/tabish-27/Pixisphere-backend.git)
 cd pixisphere-backend
