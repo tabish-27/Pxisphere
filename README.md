@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pixisphere Backend
 
 This is the backend server for **Pixisphere**, a role-based service inquiry platform with authentication, partner onboarding, lead assignment, and admin dashboard functionalities.
@@ -64,3 +65,6 @@ cd pixisphere-backend
 docker build -t pixisphere-backend .
 docker run -p 5000:5000 pixisphere-backend
 ```
+=======
+# Pxisphere
+>>>>>>> 093ad9776064e4d7ac84494ae2e538dad204cbee
