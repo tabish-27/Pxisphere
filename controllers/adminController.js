@@ -22,7 +22,6 @@ exports.verifyPartner = async (req, res) => {
 };
 
 
-const Partner = require("../models/Partner");
 const Inquiry = require("../models/Inquiry");
 
 exports.getStats = async (req, res) => {

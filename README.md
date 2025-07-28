@@ -45,3 +45,22 @@ Use the Postman collection below to test all APIs.
 ```bash
 git clone [https://github.com/your-username/pixisphere-backend.git](https://github.com/tabish-27/Pixisphere-backend.git)
 cd pixisphere-backend
+
+```
+
+## 🚦 Rate Limiting & Logging
+
+- All APIs are protected with rate limiting (100 requests per 15 minutes per IP).
+- All requests are logged using morgan (dev mode).
+
+## 📖 API Documentation (Swagger)
+
+- Interactive API docs available at: `http://localhost:5000/api-docs`
+
+## 🐳 Docker
+
+- To run with Docker:
+```bash
+docker build -t pixisphere-backend .
+docker run -p 5000:5000 pixisphere-backend
+```

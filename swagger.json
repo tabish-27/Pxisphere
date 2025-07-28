@@ -1,0 +1,70 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Pixisphere API",
+    "version": "1.0.0",
+    "description": "API documentation for Pixisphere backend."
+  },
+  "servers": [
+    { "url": "http://localhost:5000" }
+  ],
+  "paths": {
+    "/api/auth/signup": {
+      "post": {
+        "summary": "Register user by role",
+        "tags": ["Auth"],
+        "requestBody": { "required": true },
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "summary": "Login and return JWT",
+        "tags": ["Auth"],
+        "requestBody": { "required": true },
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/inquiry": {
+      "post": {
+        "summary": "Submit new service inquiry",
+        "tags": ["Inquiry"],
+        "requestBody": { "required": true },
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/partner/leads": {
+      "get": {
+        "summary": "Fetch matched inquiries",
+        "tags": ["Partner"],
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/partner/portfolio": {
+      "post": {
+        "summary": "Add portfolio image",
+        "tags": ["Partner"],
+        "requestBody": { "required": true },
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/admin/verifications": {
+      "get": {
+        "summary": "Admin view pending partners",
+        "tags": ["Admin"],
+        "responses": { "200": { "description": "Success" } }
+      }
+    },
+    "/api/admin/verify/{id}": {
+      "post": {
+        "summary": "Admin approve/reject partner",
+        "tags": ["Admin"],
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": { "required": true },
+        "responses": { "200": { "description": "Success" } }
+      }
+    }
+  }
+} 
