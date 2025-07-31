@@ -47,7 +47,7 @@ Use the Postman collection below to test all APIs.
 git clone [https://github.com/your-username/pixisphere-backend.git](https://github.com/tabish-27/Pixisphere-backend.git)
 cd pixisphere-backend
 
-```
+``
 
 ## 🚦 Rate Limiting & Logging
 
